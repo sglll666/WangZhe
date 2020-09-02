@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>王者荣耀登录</title>
+    <script type="text/javascript" src="js/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="js/Login.js"></script>
+    <link rel="stylesheet" href="css/Login.css" type="text/css" />
+</head>
+<body>
+
+<div class="login">
+    <div class="login-both">
+        <div class="login-title">
+            <p>用户登录</p>
+            <p>&nbsp;|&nbsp;</p>
+            <p>管理员登录</p>
+        </div>
+        <div class="login-body">
+            <form action="/WangZhe_war_exploded/LoginServlet" method="post" class="login-form">
+                id:<input type="text" name="id"  value="" size="24" placeholder="请输入id..."/><br />
+                用户名：<input type="text" name="username" id="btn01" value="" size="24" placeholder="请输入用户名..."/><br />
+                密&emsp;码：<input type="password" name="password" id="btn02" value=""  size="24" placeholder="请输入6-16位密码..."/>
+                <input type="submit" value="登录">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="login-admin">
+    <div class="login-admin-both">
+        <div class="login-admin-title">
+            <p>用户登录</p>
+            <p>&nbsp;|&nbsp;</p>
+            <p>管理员登录</p>
+        </div>
+        <div class="login-admin-body">
+            <form action="/WangZhe_war_exploded/LoginServlet" method="post" class="login-admin-form">
+                <input type="text" name="name" placeholder="请输入用户名">
+                <input type="password" name="password" placeholder="请输入密码">
+                <input type="submit" value="登录">
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

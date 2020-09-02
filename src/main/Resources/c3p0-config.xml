@@ -1,0 +1,10 @@
+<c3p0-config>
+
+    <!-- This app is massive! -->
+    <named-config name="helloc3p0">
+        <property name="driverClass">com.mysql.jdbc.Driver</property>
+        <property name="jdbcUrl">jdbc:mysql:///myschool</property>
+        <property name="user">root</property>
+        <property name="password">root</property>
+    </named-config>
+</c3p0-config>

@@ -1,0 +1,106 @@
+.dingwei,.search{
+				display: inline-block;
+			}
+			.btn{
+				font-size: 30px;
+				border-radius: 50%;
+				background-color: deepskyblue;
+				margin-top: 5px;
+			}
+			.btn_title{
+				background-color: deepskyblue;
+			}
+			.radioCircle{
+				margin-left: 40px;
+			}
+			.search{
+				float: right;
+				margin-right: 200px;
+				margin-top: 20px;
+				size: 30px;
+			}
+			.img_search{
+				float: right;
+			}
+			/*.show{
+				width: 1100px;
+				height: 500px;
+				margin: 0 auto;
+				border: 1px solid red;
+			}*/
+			li{
+				list-style: none;
+			}
+			#show_free{
+				float: left;
+				visibility: hidden;
+				position: fixed;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			#show_free span{
+				margin-left: 35px;
+			}
+			#show_new{
+				float: left;
+				visibility: hidden;
+				position: fixed;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			#show_zhanshi{
+				float: left;
+				visibility: visible;
+				position: fixed;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			.zhan1,.zhan2,.zhan3,.fa1,.fa2,.fa3,.fa4,
+			.she1,.she2,.she3,.she4,.cike1,.cike2,.cike3,.cike4,
+			.fuzhu1,.fuzhu2,.fuzhu3,.fuzhu4,.free1,.free2,.free3,
+			.free4,.new1,.new2,.new3{
+				display: inline-block;
+			}
+			.span1{
+				margin-left: 45px;
+			}
+			.span2{
+				margin-left: 35px;
+			}
+			.span3{
+				margin-left: 25px;
+			}
+			.span4{
+				margin-left: 18px;
+			}
+			#show_fashi{
+				float: left;
+				visibility: hidden;
+				position: fixed;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			#show_sheshou{
+				float: left;
+				visibility: hidden;
+				position: fixed;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			#show_cike{
+				float: left;
+				visibility: hidden;
+				position: fixed;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			#show_fuzhu{
+				float: left;
+				visibility: hidden;
+				position: fixed;
+				margin-top: 10px;
+				margin-left: 10px;
+			}
+			body{
+				background: linear-gradient(to bottom,deepskyblue,gray) no-repeat;
+			}

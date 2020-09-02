@@ -1,0 +1,64 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+}
+.nav-header{
+	height: 90px;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+.head-contain{
+	width: 1180px;
+	height: 90px;
+	margin: 0 auto;
+	text-align: center;
+}
+.top-logo,.top-nav,.top-nav li,.top-right{
+	height: 90px;
+	display: inline-block;
+	vertical-align: top;
+}
+.top-nav{
+	margin: 0 48px;
+}
+.top-nav li{
+	line-height: 90px;
+	width: 90px;
+}
+.top-nav li a{
+	display: block;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+}
+
+.top-nav li a:hover{
+	color: blue;
+}
+.top-right a{
+	display: inline-block;
+	font-size: 16px;
+	text-align: center;
+	border-radius: 35px;
+	margin-top: 25px;	
+}
+.top-right a first-of-type{
+	width: 93px;
+	height: 38px;
+	line-height: 38px;
+	color: yellow;
+	border: 1px yellow solid;
+}
+.top-right a first-of-type:hover{
+	color: gray;
+	background: yellow;
+}
+.secNav{
+	background-image: url(../img/12.jpg) ;
+	background-size: cover;
+}
+

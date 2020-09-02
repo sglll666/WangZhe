@@ -1,0 +1,14 @@
+.soubg{
+	width: 100%;
+	min-width: 1200px;
+	height: 35px;
+	line-height: 35px;
+	background: linear-gradient(to bottom, #d1d1d1,#f4f4f4);
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+div{
+	display: block;
+}

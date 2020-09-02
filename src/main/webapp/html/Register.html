@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>王者荣耀注册界面第二版</title>
+		<link rel="stylesheet" type="text/css" href="css/Register.css"/>
+		<style type="text/css">
+		h1{
+		font-size: 22;
+		color:#FF0000 ;
+		text-align: center;
+		width: 100%;
+	    }
+	    p{
+	    	margin: 10px;
+	    }
+	    .aa{
+		text-align: center;
+	    }
+	    
+	    .secNav{
+	    	height: 650px;
+	    }
+	
+	    .entity{
+		margin: 75px 200px;
+		text-align: center;
+		float: right;
+		background: #9B9ECB;
+			background-color: rgba(90,120,150,0.5);
+	     }
+	    .pic2{
+	    float: left;
+	    width: 400px;
+	    height: 250px;
+	    margin: 200px 100px;
+	    } 
+	     
+	     .footNav{
+	    width: 100%;
+	    margin: 20px auto 0;
+	    text-align: center;
+	    background: url("img/5.jpg") ;
+	    background-size: cover;
+	     }
+		</style>
+	</head>
+	
+	<body id="bodyNav">
+		<div class="wrap">
+			<!--头部-->
+			<header class="nav-header">
+				<div class="head-contain">
+					<a href="" class="top-logo"><img src="img/10.jpg" width="145" height="90"/></a>
+					<nav class="top-nav">
+						<ul>
+							<li><a href="">首页</a></li>
+							<li><a href="">登录界面</a></li>
+							<li><a href="">注册界面</a></li>
+							<li><a href="">玩法介绍</a></li>
+							<li><a href="">英雄介绍</a></li>
+							<li><a href="">交流社区</a></li>
+						</ul>
+					</nav>
+					</div>
+				</div>
+			</header>
+		</div>
+	<section class="secNav">
+	<div class="entity">
+		<form action="/WangZhe_war_exploded/RegisterServlet" method="post">
+		<h2>注&nbsp;&nbsp;&nbsp;&nbsp;册</h2>
+		<table>
+			<tr>
+				<td>游戏ID</td>
+				<td><input  type="text" name="id"/></td>
+			</tr>
+			<tr>
+				<td>设置密码</td>
+				<td><input  type="text" name="password"/></td>
+			</tr>
+			<tr>
+				<td>重复密码</td>
+				<td><input  type="text" name="password"/></td>
+			</tr>
+			<tr>
+				<td>玩家性别</td>
+				<td>
+	                <label for="man">男</label>
+	                <input type="radio" name="gen" id="man" checked />
+	                <label for="falman">女</label>
+	                <input type="radio" name="gen" id="falman" /><br />
+				</td>
+			</tr>
+			<tr>
+				<td>玩家生日</td>
+				<td>
+					<select name="year" >
+            <option value="1991" selected>1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+        </select>
+        <span>年</span>
+        <select name="month" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11" selected>11</option>
+            <option value="12" >112</option>
+        </select>
+        <span>月</span>
+        <select name="day" >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="30" selected>30</option>
+        </select>
+        <span>日</span>
+				</td>
+			</tr>
+		</table>
+    <p>未满<span>18周岁</span>请在监护人监督下进行游戏</p>
+    <p>
+        <img src="img/renren_code.gif" alt=""/>
+        <a href="#">看不清换一张？</a>
+    </p>
+    <p>验证：<input name="" type="text" id="yanzhang"/></p>
+
+    <p><input type="submit" value="提交" />&nbsp;&nbsp;&nbsp;&nbsp<input type="reset" value="重置"/></p>
+	</form>
+	</div>
+	
+
+</section>
+<footer class="footNav">
+	<p><a href="#">工商网监电子标识</a>|&nbsp;&nbsp;粤网文[2017]6138-1456号&nbsp;&nbsp;|<a href="#">(总)网出证(粤)字第057号</a></p>
+	<p><a href="#">文网游备字[2016]M-CSG 0059号</a>|&nbsp;&nbsp;新广出审[2017]6712号&nbsp;&nbsp;|<a href="#">ISBN 978-7-7979-8408-9</a></p>	
+</footer>
+	</body>
+	</body>
+</html>

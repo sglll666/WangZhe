@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>社区互动页面</title>
+		<style type="text/css">
+			*{
+				margin: 0; 
+				padding: 0; 
+				font-family: "Arial", "微软雅黑";
+			}
+			ul,li{
+				list-style: none;
+			}
+			.mainFrame{
+				margin: 0 auto; 
+				width: 1000px; 
+				position: relative;
+			}
+			header{
+				border-bottom: 2px solid deepskyblue;
+				width: 1000px;
+				padding: 5px  ;
+			}
+			header span{
+				display:inline-block;
+				width: 110px; 
+				height: 50px; 
+				color: white; 
+				background: deepskyblue; 
+				font-size: 20px; 
+				font-weight: bold; 
+				text-align: center;
+				line-height: 50px; 
+				border-radius: 50px; 
+			}
+			.post{
+				position: absolute; 
+				background: skyblue; 
+				border: 1px yellow solid; 
+				width: 500px; 
+				left: 65px; 
+				top:70px; 
+				padding: 20px; 
+				font-size: 14px; 
+				z-index: 1; 
+				/*display: none;*/
+			}
+			.post .title{
+				width: 500px; 
+				height:40px; 
+				display: block; 
+				border: 1px yellow solid; 
+				margin-bottom: 20px;
+			}
+			.post select{
+				width: 100px; 
+				height: 40px;
+			}
+			.content{
+				width: 500px; 
+				height: 200px; 
+				display: block; 
+				margin: 10px 0;
+				border: 1px yellow solid;}
+			.btn{
+				width: 55px; 
+				height: 35px; 
+				color: white; 
+				background: deepskyblue; 
+				font-size: 16px; 
+				font-weight: bold; 
+				text-align: center; 
+				line-height: 35px; 
+				border-radius: 30px; 
+				margin-left: 220px;
+				}
+				.mainFrame section ul li{
+					padding: 10px 0; 
+					border-bottom: 1px #999999 dashed;
+    				overflow: hidden;
+    			}
+				.mainFrame section ul li div{
+					float: left; width: 60px; 
+					margin-right: 10px;
+				}
+				.mainFrame section ul li div img{ 
+					border-radius:50%; 
+					width: 60px;
+				}
+				.mainFrame section ul li h1{
+					float: left; 
+					width: 520px; 
+					font-size: 16px; 
+					line-height: 35px;
+				}
+				.mainFrame section ul li p{
+					color: #666666; 
+					line-height: 25px; 
+					font-size: 12px; 
+				}
+				.mainFrame section ul li p span{
+					padding-right:20px;
+				}
+		</style>
+	</head>
+	<body>
+		<div class="mainFrame">
+    		<header><span onclick="post()">我要讨论</span></header>
+    		<section>
+        		<ul id="postList"></ul>
+    		</section>
+    		<div class="post" id="post">
+       			<input class="title" placeholder="请输入标题（1-50个字符）" id="title">
+       			 所属版块：<select id="sec"><option>请选择版块</option><option>我是新手</option><option>故事站点</option><option>社区互动</option><option>赛事中心</option></select>
+        		<textarea class="content" id="content"></textarea>
+        		<input class="btn" value="发布" onclick="postsuccess()">
+    		</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-3.5.1.js"></script>
+		
+		<script>
+			function post(){
+ 				document.getElementById("post").style.display="block";
+			}
+			var tou=new 				Array("tou01.png","tou02.png","tou03.png","tou04.png","tou05.png");
+			function postsuccess(){
+    			var newLi=document.createElement("li");   //创建一个新的li节点元素
+    			var iNum=Math.floor(Math.random()*4);  //随机获取头像
+    			var touDiv=document.createElement("div");   //创建头像所在的div节点
+    			var touImg=document.createElement("img");  //创建头像节点
+   				touImg.setAttribute("src","img/"+tou[iNum]);  //增加头像路径
+    			touDiv.appendChild(touImg);      //将头像放在div节点中
+
+    			var titleH1=document.createElement("h1"); //创建标题所在的标签h1
+    			var title=document.getElementById("title").value;  //获取标题
+    			titleH1.innerHTML=title;   //将标题内容放在h1标签中
+
+    			var newP=document.createElement("p"); //创建一个新的p节点元素
+    			var secName=document.createElement("span");
+    			var secSelect=document.getElementById("sec").value;  //获取版块
+    			secName.innerHTML="版块："+secSelect;    //把版块内容放到span中
+    			var myDate=new Date();
+    var currentDate=myDate.getFullYear()+"-"+parseInt(myDate.getMonth()+1)+"-"+myDate.getDate()+" "+myDate.getHours()+":"+myDate.getMinutes();
+    			var timeSpan=document.createElement("span");
+    			timeSpan.innerHTML="发表时间："+currentDate;
+    			newP.appendChild(secName);   //在p节点中插入版块
+    			newP.appendChild(timeSpan);  //在p节点中插入发布时间；
+
+    			newLi.appendChild(touDiv);  //插入头像
+   			 	newLi.appendChild(titleH1);  //插入标题
+			    newLi.appendChild(newP);  //插入版块、时间内容
+			    var postList=document.getElementById("postList");
+			    postList.insertBefore(newLi,postList.firstChild);   //把当前内容插入到列表最前面
+
+			    document.getElementById("title").value="";    //标题设置为空
+			    document.getElementById("content").value="";  //内容设置为空
+			    document.getElementById("post").style.display="none";
+		}
+		</script>
+	</body>
+</html>

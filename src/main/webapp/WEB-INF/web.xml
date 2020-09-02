@@ -1,0 +1,68 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>UpdateServlet</servlet-name>
+    <servlet-class>    cn.kgc.Servlet.UpdateServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateServlet</servlet-name>
+    <url-pattern>/UpdateServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UpdatePageServlet</servlet-name>
+    <servlet-class>  cn.kgc.Servlet.UpdatePageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdatePageServlet</servlet-name>
+    <url-pattern>/UpdatePageServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ADDServlet</servlet-name>
+    <servlet-class>  cn.kgc.Servlet.ADDServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ADDServlet</servlet-name>
+    <url-pattern>/ADDServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>cn.kgc.Servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>TestServlet</servlet-name>
+    <servlet-class>cn.kgc.Test.TestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TestServlet</servlet-name>
+    <url-pattern>/TestServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>UserListServlet</servlet-name>
+    <servlet-class>  cn.kgc.Servlet.UserListServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserListServlet</servlet-name>
+    <url-pattern>/UserListServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DelUserServlet</servlet-name>
+    <servlet-class>    cn.kgc.Servlet.DelUserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DelUserServlet</servlet-name>
+    <url-pattern>/DelUserServlet</url-pattern>
+  </servlet-mapping>
+
+
+</web-app>
